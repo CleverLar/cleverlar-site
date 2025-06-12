@@ -1,25 +1,144 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <title>CleverLar</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CleverLar - Automação Residencial</title>
   <style>
+    /* Reset básico */
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
     body {
-      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #004aad;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header .logo {
+      font-weight: bold;
+      font-size: 1.6rem;
+      letter-spacing: 2px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffb400;
+    }
+
+    main {
+      padding: 40px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    main h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #004aad;
+    }
+
+    main p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      color: #555;
+    }
+
+    section.servicos {
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgb(0 0 0 / 0.1);
+    }
+
+    section.servicos h2 {
+      margin-bottom: 20px;
+      color: #004aad;
+    }
+
+    section.servicos ul {
+      list-style: none;
+    }
+
+    section.servicos li {
+      margin-bottom: 15px;
+      font-weight: 600;
+    }
+
+    footer {
+      margin-top: 60px;
       text-align: center;
-      padding-top: 100px;
-      background-color: #f2f2f2;
+      padding: 20px;
+      background: #222;
+      color: white;
     }
-    h1 {
-      color: #333;
-    }
-    p {
-      color: #666;
+
+    footer a {
+      color: #ffb400;
+      text-decoration: none;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
-  <h1>🚀 Bem-vindo à CleverLar!</h1>
-  <p>Estamos construindo algo incrível. Em breve, novidades por aqui!</p>
+  <header>
+    <div class="logo">CleverLar</div>
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio">
+      <h1>Automação residencial para sua casa inteligente</h1>
+      <p>Transformamos sua residência com tecnologia, segurança e conforto. Descubra a revolução do lar inteligente com a CleverLar.</p>
+    </section>
+
+    <section id="sobre">
+      <h2>Sobre a CleverLar</h2>
+      <p>A CleverLar é especialista em automação residencial, oferecendo soluções modernas e personalizadas para facilitar sua vida e proteger seu lar.</p>
+    </section>
+
+    <section id="servicos" class="servicos">
+      <h2>Nossos Serviços</h2>
+      <ul>
+        <li>Portões automáticos</li>
+        <li>Câmeras de segurança</li>
+        <li>Fechaduras digitais</li>
+        <li>Iluminação automatizada</li>
+        <li>Integração com assistentes virtuais</li>
+      </ul>
+    </section>
+
+    <section id="contato">
+      <h2>Contato</h2>
+      <p>Quer modernizar sua casa? <a href="mailto:contato@cleverlar.com">Envie um e-mail para contato@cleverlar.com</a> ou ligue para (XX) XXXX-XXXX.</p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 CleverLar - Todos os direitos reservados.
+  </footer>
 </body>
 </html>
